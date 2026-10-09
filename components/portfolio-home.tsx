@@ -950,6 +950,7 @@ function CertificatesSection() {
       file: 'https://blobs.vusercontent.net/blob/signed_e16bc6f392322d3f9e032e54ebc18c6a.pdf%20%281%29-cpNU6cPlhEFhJQCqwjZUyxDjYrWEdD.pdf',
     },
     {
+<<<<<<< HEAD
       title: 'Creating Business Intelligence',
       issuer: 'Universitas Gunadarma',
       date: '6 Jun 2026',
@@ -958,6 +959,8 @@ function CertificatesSection() {
       file: 'https://blobs.vusercontent.net/blob/signed_341b4163850f6dd0beb8cad5215f32ac.pdf%20%281%29-Md4KlJ9bbhtsxXm6espje0xy8CAh83.pdf',
     },
     {
+=======
+>>>>>>> a8ac87e19a0d978c7e6d9f81c84bfdeac0463aeb
       title: 'SQL Server for Intermediate',
       issuer: 'Universitas Gunadarma',
       date: '24 Feb 2025',
