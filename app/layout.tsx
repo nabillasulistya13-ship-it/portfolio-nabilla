@@ -1,20 +1,31 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-
 export const metadata: Metadata = {
-  title: 'Nabilla Sulistyaningrum — Data Analytics & BI Portfolio',
-  description:
-    'Portfolio of Nabilla Sulistyaningrum, an Information Systems graduate focused on data analytics, business intelligence, and AI automation.',
+  title: 'Nabilla Sulistyaningrum — Data Analytics & BI',
+  description: 'Portfolio Nabilla Sulistyaningrum — Data Analytics, Business Intelligence, Python, SQL, Power BI, AI Automation, and certificates including Data Analyst and BEM FIKTI UG achievements.',
+  openGraph: {
+    title: 'Nabilla Sulistyaningrum — Data Analytics & BI',
+    description: 'Explore Nabilla Sulistyaningrum’s portfolio, Data Analyst certificate, and BEM FIKTI UG achievements in data analytics, business intelligence, and AI automation.',
+    type: 'website',
+    locale: 'id_ID',
+  },
   generator: 'v0.app',
   icons: {
     icon: [
-      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
     ],
     apple: '/apple-icon.png',
   },
@@ -22,7 +33,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#f3f7ff',
+  themeColor: '#f1f6ff',
 }
 
 export default function RootLayout({
@@ -31,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="id">
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
